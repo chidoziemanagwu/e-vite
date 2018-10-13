@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>It's our wedding, save the date!</title>
+       <link rel="stylesheet" href="css/style.css"/>
+	   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media           queries -->      
+       <!-- WARNING: Respond.js doesn't work if you view the page  
+   
+         via file:// --> 
+           <!--[if lt IE 9]>      
+              <script src="js/html5shiv.js"></script>
+			  <script src="js/respond.js"></script>     
+           <![endif]-->
+             <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+       <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+      <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lobster|Pacifico" rel="stylesheet">
+      <link rel="stylesheet" type="text/css"  href="css/all.css">
+          <script type="application/javascript" src="js/all.js"></script>
+      <script type="application/javascript" src="js/bootstrap.js"></script>
+	<script>
+   
+<!----- JQUERY FOR SLIDING NAVIGATION --->   
+$(document).ready(function() {
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+
+<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
+         $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+
+});
+
+
+</script>
+
+
+ </head> 
+	
+<body>
+<div class="cont">
+<!----- HEADER START--->   
+<!----- HEADER END--->   
+<nav class="navbar navbar-expand-md navbar-dark bg fixed-bottom">
+    <div class="mx-auto order-0">
+        <a class="navbar-brand mx-auto active" href="#slide1" title="Next Section" ><i class="fa fa-chess-king icons" style="font-size: 10vmin;    text-shadow: rgb(71,71,71)1px 2px 1px;"></i> <span style="font-family: 'Pacifico', cursive; color: royalblue;; text-decoration: underline;font-size: 6vmin;text-shadow: rgb(71,71,71)1px 2px ">DEC 20 & 23 2018</span><i class="fa fa-chess-queen icons" style="font-size: 10vmin;    text-shadow: rgb(71,71,71)1px 2px 1px;"></i></a>
+           </div>
+</nav>
+
+
+<!----- SLIDES START --->   	
+	<div id="slide1">
+            <div class="slide1">
+            <h4 style="text-align: center;">WE ARE GETTING MARRIED</h4>
+            <h1 class="names" id="names">CHUMA & INYENE</h1>
+         
+		 		    <div id="divider"> </div>
+		        <h1>Dec 20 & 23, 2018</h1>
+              <div id="divider"> </div>
+            <div class="row">
+            <div class="col-3"><p id="days" class="blocks"></p><h6 style="text-align: center">Days</h6></div>
+                <div class="col-3"><p id="hours"  class="blocks" ></p><h6 style="text-align: center"> Hours</h6></div>
+                <div class="col-3"><p id="minutes"  class="blocks" ></p><h6 style="text-align: center">Minutes</h6></div>
+                <div class="col-3"><p id="seconds"   class="blocks" ></p><h6 style="text-align: center">Seconds</h6></div>
+                </div>
+            </div>
+	               <script>
+            var countdowndate = new Date("Dec 20, 2018 10:30:00").getTime();
+                var x = setInterval(function(){
+                    var now = new Date().getTime();
+                    
+                    var distance = countdowndate - now;
+                    
+                    var days = Math.floor(distance/(1000*60*60*24));
+                    
+                    var hours = Math.floor((distance % (1000*60*60*24))/(1000*60*60));
+                       var minutes = Math.floor((distance % (1000*60*60*24))/(1000*60));
+                       var seconds = Math.floor((distance % (1000*60*60*24))/1000);
+                    
+                    document.getElementById("days").innerHTML = days;
+                      document.getElementById("hours").innerHTML = hours ;
+                      document.getElementById("minutes").innerHTML = minutes ;
+                      document.getElementById("seconds").innerHTML = seconds ;
+                    if (distance < 0){
+                        clearInterval(x);
+                        
+                        document.getElementById("demo").innerHTML = "WE ARE HAPPILY MARRIED"
+                    }
+                },1000);
+            </script>
+
+    </div> 
+
+	<div id="slide2">
+		<h1 class="heading">Invitation</h1>
+        <h3 class="underhead">The pleasure of your company is requested at our wedding ceremony</h3>
+        
+        <div class="tab" style="margin: 2vmin 0;">
+            <div class="tabl">
+  <button class="tablinks btn " onclick="openCity(event, 'London')" id="defaultOpen">Traditional Wedding</button>
+  <button class="tablinks btn " onclick="openCity(event, 'Paris')">Church Wedding</button>
+                </div>
+</div>
+        <div class="tabcontent1"  id="London">
+        <div class="row" style="margin: 2vmin 0 0 0">
+        <div class="col-md-4" style="text-align: center;box-shadow: 5px 0 5px -5px #333; padding: 2vmin 0; font-family: 'Dancing Script', cursive; font-weight: bolder;"><h3 style="font-weight: bolder;">Thursday</h3><h4 style="font-weight: bold;">December 20</h4><h5 style="font-weight: bolder;">2018</h5></div>
+        
+               <div class="col-md-4" style="text-align: center;text-shadow: rgb(71,71,71).5px 1px .5px; box-shadow: -5px 0 5px -5px #333;padding: 2vmin 0; font-family: 'Dancing Script', cursive; background-color: rgba(255,207,64,.7); border-radius: 4px; box-shadow: inset 0 0 10px #000000;box-sizing: border-box;padding: 1vmin 1vmin;"><h2 style="font-weight: bold;">Eseme Essien</h2> <h3 style="font-weight: bolder;">Event Center off 4lane by Nossien Gas Station, </h3><h3 style="font-weight: bolder;">Osongama Estate, Uyo.</h3></div>
+               <div class="col-md-4" style="text-align: center;box-shadow: -5px 0 5px -5px #333;padding: 2vmin 0; font-family: 'Dancing Script', cursive; "><h2 style="font-weight: bold;">11 O'Clock</h2><h3 style="font-weight: bolder;">In the</h3><h4 style="font-weight: bolder;">Morning</h4></div>
+        </div>
+            </div>
+        <div class="tabcontent1" id="Paris">
+                  <div class="row "  style="margin: 2vmin 0 0 0">
+        <div class="col-md-4" style="text-align: center; padding: 2vmin 0; font-family: 'Dancing Script', cursive; font-weight: bolder;"><h3 style="font-weight: bolder;">Sunday</h3><h4 style="font-weight: bold;">December 23</h4><h5 style="font-weight: bolder;">2018</h5></div>
+               <div class="col-md-4" style="text-align: center;text-shadow: rgb(71,71,71).5px 1px .5px; box-shadow: -5px 0 5px -5px #333;padding: 2vmin 0; font-family: 'Dancing Script', cursive; background-color: rgba(255,207,64,.7); border-radius: 4px; box-shadow: inset 0 0 10px #000000;box-sizing: border-box;padding: 1vmin 1vmin;"><h2 style="font-weight: bold;">L.A Kings</h2><h3 style="font-weight: bolder;">31, Ken Saro Wiwa Road (Old Stadium Road)</h3><h3 style="font-weight: bolder;">Port-Harcourt, Rivers State, Nigeria</h3></div>
+               <div class="col-md-4" style="text-align: center;padding: 2vmin 0; font-family: 'Dancing Script', cursive; "><h2 style="font-weight: bold;">10 O'Clock</h2><h3 style="font-weight: bolder;">In the</h3><h4 style="font-weight: bolder;">Morning</h4></div>
+        </div>
+    </div>
+	</div>
+	
+   <div id="slide3">
+	
+    </div> 
+	
+	
+	<div id="slide4">
+	<div class="row">
+        <div class="col-md-6">
+                 <h1 style="font-family: 'Pacifico', cursive; color: royalblue;; text-decoration: underline;">Venue</h1>
+            <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+            <div style='width: 95%; margin: 2vmin auto'><div id='gmap_canvas' style='height:440px;width:100%;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(4.831901999999999,7.015475000000038),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(4.831901999999999,7.015475000000038)});infowindow = new google.maps.InfoWindow({content:'<strong>Title</strong><br>31, Ken Saro Wiwa Road (Old Stadium Road) port harcourt<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+        
+        </div>
+                <div class="col-md-6" style="margin: 2vmin 0">
+                      <div class="tab">
+<div class="tabl">
+  <button class="tablinks1 btn " onclick="openCity1(event, 'london')" id="defaultOpen1">R.S.V.P</button>
+  <button class="tablinks1 btn " onclick="openCity1(event, 'paris')">Well Wishes</button>
+                </div>
+</div>
+                          <div class="tabcontent2"  id="london">
+                    
+                    <div style="width: 90%; margin:auto;">
+                    <form name="contactform" method="post" action="test.php">
+
+  <label for="first_name">Full Name *</label>
+ 
+ 
+  <input  type="text"  class="form-control" name="full_name" maxlength="50" size="30" placeholder="Full Name">
+
+<label for="comments">Attendance *</label>
+                        
+<select class="form-control" id="sel1" name="attendance">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+</select>
+
+
+  <label for="telephone">Number of guests</label>
+                        
+ <input type="text" id="rd"  class="form-control" name="number" maxlength="2" size="10" placeholder="How many guests are you coming with?" >
+                        
+  
+
+                        <input type="submit" value="R.S.V.P" class="btn btn-dark" style="margin-top: 3vmin">  
+                        </form></div></div>
+                    
+                    <div class="tabcontent2"  id="paris">
+                    
+                    <div style="width: 90%; margin:auto;">
+                    <form name="contactform1" method="post" action="test2.php">
+
+  <label for="first_name">Full Name *</label>
+ 
+ 
+  <input  type="text"  class="form-control" name="fname" required maxlength="50" size="30" placeholder="Full Name">
+
+
+
+  <label for="telephone">Kind Words</label>
+ <textarea class="form-control" placeholder="Your well wishes" name="kw"></textarea>                           
+  
+<input type="submit" value="Send" class="btn btn-info" style="margin-top: 3vmin">  
+                    </form></div>
+                    </div>   
+        </div>
+        </div>
+    </div> 
+	
+	
+	<div id="slide5">
+	 
+		
+
+    </div> 
+    <div id="slide6">
+
+        
+          <h1 style="font-family: 'Pacifico', cursive; color: royalblue;; text-decoration: underline;">Contact</h1>
+        <p class="pwsh"><a href="tel:08100003456" style="color: black; text-decoration: underline"><i class="fa fa-phone"></i> 0806-350-6523</a></p>
+        <p class="pwsh"><a href="tel:08100003456" style="color: black; text-decoration: underline"><i class="fa fa-phone"></i> +1(346)818-0578</a></p>
+        <p class="pwsh"><a href="tel:08100003456" style="color: black; text-decoration: underline"><i class="fa fa-phone"></i> 0706-742-4650</a></p>
+    </div>
+    	<div id="slide7">
+	 
+		          
+
+    </div> 
+	</div>
+<!----- SLIDES END --->
+<script src="js/typeit.js"></script>
+<script>
+         new TypeIt('#names', {
+        autoStart: true,
+              loop: true,
+            breakLines: false,
+             cursorChar: '<i class ="fa fa-heart"></i>',
+             speed: 200,
+
+      });
+$("#rd1").prop("disabled",true);
+  $("#sel1").change(function(){
+    if ($(this).val() == "no"){
+        $("#rd").prop("disabled",true);
+    }
+    else{
+        $("#rd").prop("disabled", false);
+    }
+})
+    
+    $("#rd").change(function(){
+    if ($(this).val() == "no"){
+        $("#rd1").prop("disabled",true);
+    }
+    else{
+        $("#rd1").prop("disabled", false);
+    }
+})
+    document.getElementById("defaultOpen").click();
+   function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent1");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+} 
+    
+    document.getElementById("defaultOpen1").click();
+   function openCity1(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent1, tablinks1;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent1 = document.getElementsByClassName("tabcontent2");
+    for (i = 0; i < tabcontent1.length; i++) {
+        tabcontent1[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks1 = document.getElementsByClassName("tablinks1");
+    for (i = 0; i < tablinks1.length; i++) {
+        tablinks1[i].className = tablinks1[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+} 
+    </script>
+</body>
+</html>
